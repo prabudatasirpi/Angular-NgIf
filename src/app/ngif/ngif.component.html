@@ -1,0 +1,23 @@
+
+
+<h1 id="header-h1">Example of ngIf </h1>
+
+<p *ngIf="result; then thenBlock; else elseBlock;">This Text is not show</p>
+
+<ng-template #thenBlock>
+    Text is rendered when condition is true
+</ng-template>
+
+<ng-template #elseBlock>
+    Text is rendered when condition is fale
+</ng-template>
+
+
+<h1 id="header-h1">Example of ngIf </h1>
+
+<div id="main-div">
+    show <input type="checkbox" [(ngModel)]="result1">
+</div>
+<p *ngIf="result1">Show is checked</p>
+
+
